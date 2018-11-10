@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter51066758 = new Ya.Metrika2({
+							id:51066758,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks2");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/51066758" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<meta charset="utf-8"/>
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet" />
+		<link href="../css/rvslider.min.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		<script src="../javascript/slider.js"></script> 
+		<link href="../css/footer.css" rel="stylesheet" />
+		<link href="../css/header.css" rel="stylesheet" />
+		<link href="../css/slider.css" rel="stylesheet" />
+		<link href="../css/authorization.css" rel="stylesheet" />
+	</head>
+	<div class="header">
+		<a href="/" class="logo">CompanyLogo</a>
+		<div class="header-right">
+			<a href="/">Домой</a> 
+			<a href="movie">Видео</a> 
+			<a href="photo">Фото</a> 
+			{{if eq .StatusAuthorization false}}
+				<a href="signin">Регистрация</a> 
+				<a href="authorization">Авторизация</a> 
+			{{end}}
+		</div>
+	</div>
+	<div id="main">
+		<div class="center">
+			<div class="container">
+				<div class="row main-form">
+					<form class="" method="post" action="/params1">
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Никнейм: </label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name" placeholder="Введите ваше имя"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+								<label for="password" class="cols-sm-2 control-label">Пароль</label>
+								<div class="cols-sm-10">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+										<input type="password" class="form-control" name="password" id="password" placeholder="Введите Ваш пароль"/>
+									</div>
+								</div>
+							</div>
+						<div class="form-group ">
+							<input type="submit" id="register" value="Авторизация" class="btn btn-primary btn-lg btn-block login-button"></input>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<ul>
+			<li>
+				<p class="home">Домой</p>
+				<a class="logo" href="/">by $continue$ <i>&copy; 2018</i></a>
+			</li>
+			<li>
+				<p class="services">Карта сайта</p>
+				<ul>
+					<li><a href="movie">Видео</a></li>
+					<li><a href="photo">Фото</a></li>
+					<li><a href="signin">Регистрация</a></li>
+					<li><a href="authorization">Авторизация</a></li>
+				</ul>
+			</li>
+			<li>
+				<p class="reachus">Обратная связь</p>
+				<ul>
+					<li><a href="https://telegram.me/continue98">Telegram</a></li>
+					<li><a href="https://vk.com/id123663731">VK</a></li>
+					<li><a href="https://github.com/continue98">GitHub</a></li>
+					<li><a href="mailto:continue@teknik.io">Email</a></li>
+				</ul>
+			</li>
+		</ul>
+	</footer>
+	</body>
+</html>

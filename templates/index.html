@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128954144-1"></script>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+			/*(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter51066758 = new Ya.Metrika2({
+							id:51066758,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks2"); */
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/51066758" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+
+		<meta charset="utf-8"/>
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../css/footer.css" rel="stylesheet" />
+		<link href="../css/header.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		<script src="javascript/slider.js"></script> 
+	</head>
+	<div class="header">
+		<a href="/" class="logo">CompanyLogo</a>
+		<div class="header-right">
+			<a href="/">Домой</a> 
+			<a href="movie">Видео</a> 
+			<a href="photo">Фото</a> 
+			{{if eq .StatusAuthorization false}}
+				<a href="signin">Регистрация</a> 
+				<a href="authorization">Авторизация</a> 
+			{{end}}
+		</div>
+	</div>
+	<div id="main">
+		<div class="center">
+				<h4>
+					<center>
+					Язык программи́рования — формальный язык, предназначенный для записи компьютерных программ. 
+					Язык программирования определяет набор лексических, синтаксических и семантических правил, определяющих внешний вид программы и действия, которые выполнит исполнитель (обычно — ЭВМ) под её управлением.
+
+					Со времени создания первых программируемых машин человечество придумало более восьми тысяч языков программирования (включая эзотерические, визуальные и игрушечные) Каждый год их число увеличивается. Некоторыми языками умеет пользоваться только небольшое число их собственных разработчиков, другие становятся известны миллионам людей. 
+					Профессиональные программисты могут владеть десятком и более разных языков программирования.
+
+					Язык программирования предназначен для написания компьютерных программ, которые представляют собой набор правил, позволяющих компьютеру выполнить тот или иной вычислительный процесс, организовать управление различными объектами, и т. п. 
+					Язык программирования отличается от естественных языков тем, что предназначен для управления ЭВМ, в то время как естественные языки используются, прежде всего, для общения людей между собой. 
+					Большинство языков программирования использует специальные конструкции для определения и манипулирования структурами данных и управления процессом вычислений.
+
+					Как правило, язык программирования определяется не только через спецификации стандарта языка, формально определяющие его синтаксис и семантику, но и через воплощения (реализации) стандарта — программные средства, обеспечивающих трансляцию или интерпретацию программ на этом языке; такие программные средства различаются по производителю, марке и варианту (версии), времени выпуска, полноте воплощения стандарта, дополнительным возможностям; могут иметь определённые ошибки или особенности воплощения, влияющие на практику использования языка или даже на его стандарт. 
+					</center>
+				</h1>
+		</div>
+	</div>
+	<footer>
+		<ul>
+			<li>
+				<p class="home">Домой</p>
+				<a class="logo" href="/">by $continue$ <i>&copy; 2018</i></a>
+			</li>
+			<li>
+				<p class="services">Карта сайта</p>
+				<ul>
+					<li><a href="movie">Видео</a></li>
+					<li><a href="photo">Фото</a></li>
+					<li><a href="signin">Регистрация</a></li>
+					<li><a href="authorization">Авторизация</a></li>
+				</ul>
+			</li>
+			<li>
+				<p class="reachus">Обратная связь</p>
+				<ul>
+					<li><a href="https://telegram.me/continue98">Telegram</a></li>
+					<li><a href="https://vk.com/id123663731">VK</a></li>
+					<li><a href="https://github.com/continue98">GitHub</a></li>
+					<li><a href="mailto:continue@teknik.io">Email</a></li>
+				</ul>
+			</li>
+			<li>
+				<p class="statistics">Статистика сайта</p>
+				<ul>
+					<li>
+						{{range .StatisticsYAMetrika}}
+							<h6> {{ . }} </h6>
+						{{end}}
+					</li>	
+				</ul>
+			</li>
+		</ul>
+	</footer>
+	</body>
+</html>

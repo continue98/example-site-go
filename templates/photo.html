@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter51066758 = new Ya.Metrika2({
+							id:51066758,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks2");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/51066758" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<meta charset="utf-8"/>
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet" />
+		<link href="../css/rvslider.min.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../css/footer.css" rel="stylesheet" />
+		<link href="../css/header.css" rel="stylesheet" />
+		<link href="../css/slider.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		<script src="../javascript/slider.js"></script> 
+	</head>
+	<div class="header">
+		<a href="/" class="logo">CompanyLogo</a>
+		<div class="header-right">
+			<a href="/">Домой</a> 
+			<a href="movie">Видео</a> 
+			<a href="photo">Фото</a> 
+			{{if eq .StatusAuthorization false}}
+				<a href="signin">Регистрация</a> 
+				<a href="authorization">Авторизация</a> 
+			{{end}}
+		</div>
+	</div>
+	<div id="main">
+		<div class="center">
+			<div class="rvs-container">
+				<div class="rvs-item-container">
+					<div class="rvs-item-stage">
+						<div class="rvs-item" style="background-image: url(https://3.bp.blogspot.com/-i-OOWA4rZdY/Wfi1Qp3OzKI/AAAAAAAA_CM/55hxG13GmYwJcWKNDMm6JLPpMwsYbHBvwCLcBGAs/s1600/golang-logo.png)">
+							<p class="rvs-item-text">Логотип Go </p>
+						</div>
+						<div class="rvs-item" style="background-image: url(https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png)">
+							<p class="rvs-item-text">Логотип С++ </p>
+						</div>
+						<div class="rvs-item" style="background-image: url(https://flazy.ru/wp-content/uploads/2010/07/logo-php-adbac78231.png)">
+							<p class="rvs-item-text">Логотип PHP </p>
+						</div>
+						<div class="rvs-item" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lua-logo-nolabel.svg/1200px-Lua-logo-nolabel.svg.png)">
+							<p class="rvs-item-text">Логотип Lua </p>
+						</div>
+						<div class="rvs-item" style="background-image: url(https://www.angelcode.com/angelscript/sdk/docs/manual/aslogo.png)">
+							<p class="rvs-item-text">Логотип AngelScript </p>
+						</div>
+					</div>
+				</div>
+				<div class="rvs-nav-container">
+					<a class="rvs-nav-prev"></a>
+					<div class="rvs-nav-stage">
+						<!-- The below is the corresponding nav item for the single item, simply duplicate this layout for each item -->
+						<a class="rvs-nav-item">
+							<span class="rvs-nav-item-thumb" style="background-image: url()"></span>
+							<h4 class="rvs-nav-item-title">Логотип Go</h4>
+						</a>
+						<a class="rvs-nav-item">
+							<span class="rvs-nav-item-thumb" style="background-image: url()"></span>
+							<h4 class="rvs-nav-item-title">Логотип C++</h4>
+						</a>
+						<a class="rvs-nav-item">
+							<span class="rvs-nav-item-thumb" style="background-image: url()"></span>
+							<h4 class="rvs-nav-item-title">Логотип PHP</h4>
+						</a>
+						<a class="rvs-nav-item">
+							<span class="rvs-nav-item-thumb" style="background-image: url()"></span>
+							<h4 class="rvs-nav-item-title">Логотип Lua</h4>
+						</a>
+						<a class="rvs-nav-item">
+							<span class="rvs-nav-item-thumb" style="background-image: url()"></span>
+							<h4 class="rvs-nav-item-title">Логотип AngelScript</h4>
+						</a>
+					</div>
+					<a class="rvs-nav-next"></a>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="../js/rvslider.min.js"></script>
+		<script>
+			jQuery(function($){
+				$('.rvs-container').rvslider();
+			});
+		</script>
+	</div>
+	<footer>
+		<ul>
+			<li>
+				<p class="home">Домой</p>
+				<a class="logo" href="/">by $continue$ <i>&copy; 2018</i></a>
+			</li>
+			<li>
+				<p class="services">Карта сайта</p>
+				<ul>
+					<li><a href="movie">Видео</a></li>
+					<li><a href="photo">Фото</a></li>
+					<li><a href="signin">Регистрация</a></li>
+					<li><a href="authorization">Авторизация</a></li>
+				</ul>
+			</li>
+			<li>
+				<p class="reachus">Обратная связь</p>
+				<ul>
+					<li><a href="https://telegram.me/continue98">Telegram</a></li>
+					<li><a href="https://vk.com/id123663731">VK</a></li>
+					<li><a href="https://github.com/continue98">GitHub</a></li>
+					<li><a href="mailto:continue@teknik.io">Email</a></li>
+				</ul>
+			</li>
+		</ul>
+	</footer>
+	</body>
+</html>

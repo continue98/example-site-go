@@ -1,0 +1,169 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter51066758 = new Ya.Metrika2({
+						id:51066758,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						webvisor:true
+					});
+				} catch(e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/51066758" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+    <meta charset="utf-8" />
+    <link href=
+    "http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700"
+    rel="stylesheet" type="text/css" />
+    <link href="../css/rvslider.min.css" rel="stylesheet" type=
+    "text/css" />
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1" />
+    <link href="../css/footer.css" rel="stylesheet" type=
+    "text/css" />
+    <link href="../css/header.css" rel="stylesheet" type=
+    "text/css" />
+    <link href="../css/slider.css" rel="stylesheet" type=
+    "text/css" />
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    type="text/css" />
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    type="text/javascript">
+</script>
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    type="text/javascript">
+</script>
+    <script src="../javascript/slider.js" type="text/javascript">
+</script>
+  </head>
+  <body>
+	<div class="header">
+		<a href="/" class="logo">CompanyLogo</a>
+		<div class="header-right">
+			<a href="/">Домой</a> 
+			<a href="movie">Видео</a> 
+			<a href="photo">Фото</a> 
+			{{if eq .StatusAuthorization false}}
+				<a href="signin">Регистрация</a> 
+				<a href="authorization">Авторизация</a> 
+			{{end}}
+		</div>
+	</div>
+    <div id="main">
+      <div class="center">
+ 		<div class="rvs-container">
+			<div class="rvs-item-container">
+				<div class="rvs-item-stage">
+					<div class="rvs-item" >
+						<p class="rvs-item-text">Лекция по Golang </p>
+						<a href="https://www.youtube.com/watch?v=9Pk7xAT_aCU" class="rvs-play-video"></a>
+					</div>
+					<div class="rvs-item">
+						<p class="rvs-item-text">Лекция по Perl </p>
+						<a href="https://www.youtube.com/watch?v=yoKe6vA4I2M" class="rvs-play-video"></a>
+					</div>
+					<div class="rvs-item">
+						<p class="rvs-item-text">Лекция по C++ </p>
+						<a href="https://www.youtube.com/watch?v=RWF5Hc8j6dM" class="rvs-play-video"></a>
+					</div>
+					<div class="rvs-item">
+						<p class="rvs-item-text">Лекция по PHP </p>
+						<a href="https://www.youtube.com/watch?v=Qr5tTlUd61A" class="rvs-play-video"></a>
+					</div>
+					<div class="rvs-item">
+						<p class="rvs-item-text">Лекция по Lua </p>
+						<a href="https://www.youtube.com/watch?v=9oVZObf2udU" class="rvs-play-video"></a>
+					</div>
+				</div>
+			</div>
+			<div class="rvs-nav-container">
+				<a class="rvs-nav-prev"></a>
+				<div class="rvs-nav-stage">
+					<a class="rvs-nav-item">
+						<span class="rvs-nav-item-thumb"></span>
+						<h4 class="rvs-nav-item-title">Лекция по Golang </h4>
+					</a>
+					<a class="rvs-nav-item">
+						<span class="rvs-nav-item-thumb"></span>
+						<h4 class="rvs-nav-item-title">Лекция по Perl</h4>
+
+					</a>
+					<a class="rvs-nav-item">
+						<span class="rvs-nav-item-thumb"></span>
+						<h4 class="rvs-nav-item-title">Лекция по C++</h4>
+					</a>
+					<a class="rvs-nav-item">
+						<span class="rvs-nav-item-thumb"></span>
+						<h4 class="rvs-nav-item-title">Лекция по PHP</h4>
+					</a>
+					<a class="rvs-nav-item">
+						<span class="rvs-nav-item-thumb"></span>
+						<h4 class="rvs-nav-item-title">Лекция по Lua</h4>
+					</a>					
+				</div>
+				<a class="rvs-nav-next"></a>
+			</div>
+		</div>
+      </div>
+	  <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+      type="text/javascript">
+</script> <script src="../js/rvslider.min.js" type=
+"text/javascript">
+</script> <script type="text/javascript">
+//<![CDATA[
+        jQuery(function($) {
+            $('.rvs-container').rvslider();
+        });
+      //]]>
+      </script>
+    </div>
+   	<footer>
+		<ul>
+			<li>
+				<p class="home">Домой</p>
+				<a class="logo" href="/">by $continue$ <i>&copy; 2018</i></a>
+			</li>
+			<li>
+				<p class="services">Карта сайта</p>
+				<ul>
+					<li><a href="movie">Видео</a></li>
+					<li><a href="photo">Фото</a></li>
+					<li><a href="signin">Регистрация</a></li>
+					<li><a href="authorization">Авторизация</a></li>
+				</ul>
+			</li>
+			<li>
+				<p class="reachus">Обратная связь</p>
+				<ul>
+					<li><a href="https://telegram.me/continue98">Telegram</a></li>
+					<li><a href="https://vk.com/id123663731">VK</a></li>
+					<li><a href="https://github.com/continue98">GitHub</a></li>
+					<li><a href="mailto:continue@teknik.io">Email</a></li>
+				</ul>
+			</li>
+		</ul>
+	</footer>
+  </body>
+</html>
