@@ -56,7 +56,7 @@ func main() {
 		tmpl := template.Must(template.ParseFiles("templates/index.html"))
 		data := PageData{
 			StatusAuthorization: ctx.Cookies.Exists("sk"),
-			//StatisticsYAMetrika: []string{"Визиты: " + str_visits, "Просмотры: " + str_views, "Посетители: " + str_visitors},
+			StatisticsYAMetrika: []string{"Визиты: " + str_visits, "Просмотры: " + str_views, "Посетители: " + str_visitors},
 		}
 		tmpl.Execute(ctx.HTML(), data)
 
