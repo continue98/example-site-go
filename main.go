@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	//	"strconv"
+	"strconv"
 
 	_ "github.com/lib/pq"
 
@@ -17,11 +17,11 @@ import (
 )
 
 const (
-	host     = "localhost"
-	port     = 5432
-	user     = "postgres"
-	password = "123123"
-	dbname   = "volhina_site"
+	host     = ""
+	port     = 
+	user     = ""
+	password = ""
+	dbname   = ""
 )
 
 type PageData struct {
@@ -47,12 +47,12 @@ func main() {
 	app.GET("/css/*any", app.ServeDir("./"))
 	app.GET("/js/*any", app.ServeDir("./"))
 	app.GET("/", func(ctx *gramework.Context) {
-		/*visits, views, visitors := getStatisticsByYandexMetrics()
+		visits, views, visitors := getStatisticsByYandexMetrics()
 
 		str_visits := strconv.FormatInt(int64(visits), 10)
 		str_views := strconv.FormatInt(int64(views), 10)
-		str_visitors := strconv.FormatInt(int64(visitors), 10) */
-		fmt.Println(ctx.Cookies.Exists("sk"))
+		str_visitors := strconv.FormatInt(int64(visitors), 10) 
+		
 		tmpl := template.Must(template.ParseFiles("templates/index.html"))
 		data := PageData{
 			StatusAuthorization: ctx.Cookies.Exists("sk"),
